@@ -29,9 +29,9 @@ jobs:
 
       - name: Prepare Pages artifact
         run: |
-          if [ -d dist/b-day/browser ]; then
-            echo "PUBLISH_DIR=dist/b-day/browser" >> $GITHUB_ENV
-          elif [ -d dist/b-day ]; then
+          if [ -d dist/bday/browser ]; then
+            echo "PUBLISH_DIR=dist/bday/browser" >> $GITHUB_ENV
+          elif [ -d dist/bday ]; then
             echo "PUBLISH_DIR=dist/bday" >> $GITHUB_ENV
           else
             echo "Angular build output not found"
