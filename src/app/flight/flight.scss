@@ -1,0 +1,376 @@
+.flight-page {
+  min-height: 100vh;
+  background: #0a192f;
+  background-image:
+    radial-gradient(at 50% 0%, rgba(12, 74, 110, 0.4) 0px, transparent 75%),
+    linear-gradient(180deg, #0a192f 0%, #020c1b 100%);
+  color: #f8fafc;
+  font-family: 'Poppins', -apple-system, sans-serif;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.font-mono {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.btn-back {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  color: #e2e8f0;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-back:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.flight-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-box {
+  margin-bottom: 2rem;
+}
+
+.badge {
+  background: #0284c7;
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin: 0.8rem 0 0.4rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.desc {
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+/* Authentic Boarding Pass Styling */
+.boarding-pass {
+  background: #ffffff;
+  color: #0f172a;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+  margin-bottom: 2rem;
+  border: 1px solid #cbd5e1;
+}
+
+.pass-header {
+  background: #002b49; /* Klasyczny granat lotniczy */
+  color: #ffffff;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #d97706; /* Akcent złoty/bursztynowy */
+}
+
+.airline-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.airline-logo {
+  font-size: 1.4rem;
+}
+
+.airline-name {
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.pass-type {
+  font-size: 0.75rem;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: #f1f5f9;
+}
+
+.pass-body {
+  padding: 2rem 1.8rem;
+  background: #ffffff;
+}
+
+.flight-route {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px dashed #e2e8f0;
+}
+
+.route-point {
+  display: flex;
+  flex-direction: column;
+}
+
+.route-point.right {
+  text-align: right;
+}
+
+.airport-code {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #002b49;
+  line-height: 1;
+}
+
+.city-name {
+  font-size: 0.82rem;
+  color: #64748b;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.route-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding: 0 1.5rem;
+}
+
+.flight-number, .flight-duration {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #0284c7;
+  letter-spacing: 1px;
+}
+
+.line-graphic {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 6px 0;
+}
+
+.line-graphic .dot {
+  width: 8px;
+  height: 8px;
+  background: #002b49;
+  border-radius: 50%;
+}
+
+.line-graphic .dashed-line {
+  flex: 1;
+  height: 2px;
+  border-top: 2px dashed #0284c7;
+}
+
+.line-graphic .plane-icon {
+  margin: 0 8px;
+  font-size: 1.1rem;
+  color: #002b49;
+}
+
+.passenger-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  background: #f8fafc;
+  padding: 1.2rem;
+  border-radius: 12px;
+  border: 1px solid #f1f5f9;
+}
+
+.detail-box label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: #64748b;
+  letter-spacing: 0.5px;
+  margin-bottom: 3px;
+}
+
+.detail-box .value {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Tear-off Stub Section */
+.pass-stub {
+  background: #f1f5f9;
+  border-top: 2px dashed #cbd5e1;
+  padding: 1.2rem 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stub-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.stub-label {
+  font-size: 0.65rem;
+  color: #64748b;
+  font-weight: 800;
+}
+
+.stub-details strong {
+  font-size: 0.95rem;
+  color: #002b49;
+  margin: 2px 0;
+}
+
+.stub-sub {
+  font-size: 0.8rem;
+  color: #475569;
+}
+
+.barcode-container {
+  text-align: right;
+}
+
+.barcode {
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #0f172a;
+}
+
+.barcode-num {
+  font-size: 0.65rem;
+  color: #64748b;
+  display: block;
+}
+
+/* Cards */
+.info-card {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-card h3 {
+  color: #38bdf8;
+  font-size: 1.25rem;
+  margin-bottom: 0.8rem;
+}
+
+.info-card p {
+  color: #cbd5e1;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.info-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Navigation Card */
+.nav-card {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 18px;
+  padding: 1.8rem;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 1.2rem;
+}
+
+.compass-icon {
+  font-size: 2.2rem;
+}
+
+.nav-header h3 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.nav-header p {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin: 2px 0 0;
+}
+
+.nav-details {
+  background: rgba(2, 132, 199, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 14px;
+  padding: 1.2rem;
+}
+
+.address-box strong {
+  color: #38bdf8;
+  font-size: 1.05rem;
+  display: block;
+}
+
+.address-box p {
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  margin: 4px 0 1.2rem;
+}
+
+.btn-navigation {
+  display: block;
+  text-align: center;
+  background: linear-gradient(135deg, #0284c7, #0369a1);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px rgba(2, 132, 199, 0.35);
+}
+
+.btn-navigation:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.5);
+}
+
+@media (max-width: 640px) {
+  .passenger-details-grid {
+    grid-template-columns: 1fr;
+  }
+  .pass-stub {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .barcode-container {
+    text-align: left;
+  }
+  .airport-code {
+    font-size: 2.2rem;
+  }
+}

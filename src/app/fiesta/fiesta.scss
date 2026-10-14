@@ -1,0 +1,235 @@
+.fiesta-page {
+  min-height: 100vh;
+  background: #120b08;
+  background-image:
+    radial-gradient(at 50% 0%, rgba(185, 28, 28, 0.25) 0px, transparent 75%),
+    linear-gradient(180deg, #120b08 0%, #050302 100%);
+  color: #fef2f2;
+  font-family: 'Poppins', -apple-system, sans-serif;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.font-mono {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.btn-back {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  color: #fecdd3;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-back:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.fiesta-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-box {
+  margin-bottom: 2rem;
+}
+
+.badge {
+  background: #b91c1c;
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin: 0.8rem 0 0.3rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.subtitle {
+  color: #f87171;
+  font-size: 0.82rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+/* Steak Card */
+.steak-card {
+  background: rgba(28, 19, 15, 0.85);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+}
+
+.steak-hero-bg {
+  background: linear-gradient(135deg, #7f1d1d, #450a0a);
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.badge-award {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #f59e0b;
+  color: #451a03;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.emoji-hero {
+  font-size: 3.5rem;
+}
+
+.steak-content {
+  padding: 2rem;
+}
+
+.steak-content h2 {
+  color: #fca5a5;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.intro-text {
+  color: #e5e7eb;
+  line-height: 1.6;
+  font-size: 0.98rem;
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px dashed rgba(239, 68, 68, 0.2);
+}
+
+.menu-highlights h3 {
+  color: #f87171;
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.menu-item {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 1.2rem;
+  align-items: flex-start;
+}
+
+.item-icon {
+  font-size: 1.6rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.menu-item strong {
+  color: #fff;
+  font-size: 1rem;
+  display: block;
+}
+
+.menu-item p {
+  color: #9ca3af;
+  font-size: 0.88rem;
+  margin: 3px 0 0;
+  line-height: 1.4;
+}
+
+/* Navigation Card */
+.nav-card {
+  background: rgba(28, 19, 15, 0.85);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  border-radius: 20px;
+  padding: 1.8rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 1.2rem;
+}
+
+.location-icon {
+  font-size: 2.2rem;
+}
+
+.nav-header h3 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.nav-header p {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  margin: 2px 0 0;
+}
+
+.nav-details {
+  background: rgba(185, 28, 28, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  border-radius: 14px;
+  padding: 1.2rem;
+}
+
+.address-box strong {
+  color: #fca5a5;
+  font-size: 1.1rem;
+  display: block;
+}
+
+.address-box p {
+  color: #e5e7eb;
+  font-size: 0.9rem;
+  margin: 4px 0 0.8rem;
+}
+
+.time-tag {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.3);
+  color: #f87171;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.btn-navigation {
+  display: block;
+  text-align: center;
+  background: linear-gradient(135deg, #b91c1c, #991b1b);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px rgba(185, 28, 28, 0.4);
+}
+
+.btn-navigation:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(185, 28, 28, 0.6);
+}

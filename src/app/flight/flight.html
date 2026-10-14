@@ -1,0 +1,115 @@
+<div class="flight-page">
+  <button class="btn-back" (click)="goBack()">← Powrót do Przewodnika</button>
+
+  <div class="flight-container">
+    <div class="header-box">
+      <span class="badge font-mono">LOT / B737-800 • VIP FLIGHT PASS</span>
+      <h1>Karta Pokładowa & Misja Kapitańska</h1>
+      <p class="desc">Dziś zamieniamy miejsce na pokładzie na pierwszy fotel w kokpicie!</p>
+    </div>
+
+    <!-- Official Style Boarding Pass -->
+    <div class="boarding-pass">
+      <!-- Top Ticket Header -->
+      <div class="pass-header">
+        <div class="airline-brand">
+          <span class="airline-logo">✈️</span>
+          <span class="airline-name">NATIONAL AIRLINES • SPECIAL CHARTER</span>
+        </div>
+        <div class="pass-type font-mono">BOARDING PASS / CZEK IN</div>
+      </div>
+
+      <!-- Ticket Main Section -->
+      <div class="pass-body">
+        <div class="flight-route">
+          <div class="route-point">
+            <span class="airport-code">WAW</span>
+            <span class="city-name">Warszawa (EPWA)</span>
+          </div>
+
+          <div class="route-line">
+            <span class="flight-number font-mono">FLIGHT B737</span>
+            <div class="line-graphic">
+              <span class="dot"></span>
+              <span class="dashed-line"></span>
+              <span class="plane-icon">✈️</span>
+              <span class="dashed-line"></span>
+              <span class="dot"></span>
+            </div>
+            <span class="flight-duration font-mono">30 MIN SESSION</span>
+          </div>
+
+          <div class="route-point right">
+            <span class="airport-code">SIM</span>
+            <span class="city-name">Kokpit B737-800</span>
+          </div>
+        </div>
+
+        <div class="passenger-details-grid">
+          <div class="detail-box">
+            <label>KAPITAN</label>
+            <span class="value">Lulu (ex-Cabin Crew)</span>
+          </div>
+          <div class="detail-box">
+            <label>TYP MASZYNY</label>
+            <span class="value font-mono">BOEING 737-800</span>
+          </div>
+          <div class="detail-box">
+            <label>GODZINA ODLOTU</label>
+            <span class="value font-mono">13:15</span>
+          </div>
+          <div class="detail-box">
+            <label>KLASA POKŁADU</label>
+            <span class="value">CAPTAIN / FIRST OFFICER</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ticket Tear-off Stub (Strefa odrywana biletu) -->
+      <div class="pass-stub">
+        <div class="stub-details">
+          <span class="stub-label font-mono">FLIGHT PERMIT</span>
+          <strong>BOEING 737-800 SIMULATOR</strong>
+          <span class="stub-sub">Muranów • Warszawa</span>
+        </div>
+        <div class="barcode-container">
+          <div class="barcode font-mono">||| | ||||| ||| || |||||| | ||||</div>
+          <span class="barcode-num font-mono">737-800-2026-BDAY</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cabin Crew to Captain Story Card -->
+    <div class="info-card">
+      <h3>👨‍✈️ Od Cabin Crew do Kapitana!</h3>
+      <p>
+        Tysiące mil w powietrzu, setki przepracowanych rejsów... Ale dzisiaj zamieniamy role! Żadnych pasażerów pytających o sok pomarańczowy, żadnych turbulencji w serwisie — tylko Ty, zaawansowana awionika i 60 ton maszyny do opanowania!
+      </p>
+      <p>
+        Przed Tobą <strong>30-minutowa sesja lotnicza</strong> w pełnowymiarowej replice kokpitu pod okiem instruktora.
+        Odpowiadasz za uruchomienie silników, procedurę startu, nawigację w powietrzu oraz przyziemienie na wybranym lotnisku!
+      </p>
+    </div>
+
+    <!-- Navigation Card -->
+    <div class="nav-card">
+      <div class="nav-header">
+        <span class="compass-icon">🧭</span>
+        <div>
+          <h3>Punkt odprawy</h3>
+        </div>
+      </div>
+
+      <div class="nav-details">
+        <div class="address-box">
+          <strong>Centrum Symulacji Lotniczych</strong>
+          <p>ul. Pokorna 2 lok. U12, 00-199 Warszawa (Muranów)</p>
+        </div>
+
+        <a href="https://maps.google.com/?q=Pokorna+2,+Warszawa" target="_blank" class="btn-navigation">
+          🛫 Otwórz Mapę / Dojazd GPS
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,90 @@
+<div class="dashboard-page">
+  <header class="header">
+    <div class="hero-age-container">
+      <!-- 1. Szalona cyfra 40 na samej górze -->
+      <div class="big-number-wrapper">
+        <span class="big-number">40</span>
+        <span class="sparkle s1">✨</span>
+        <span class="sparkle s2">🔥</span>
+        <span class="sparkle s3">🎉</span>
+      </div>
+
+      <!-- 2. Label & 3. Tytuł pod spodem -->
+      <div class="hero-text-wrap">
+        <span class="hero-label font-mono">⚡ LEVEL 40 UNLOCKED ⚡</span>
+        <h2>Urodzinowy Przewodnik</h2>
+      </div>
+    </div>
+  </header>
+
+  <main class="grid-container">
+    @for (tile of tiles; track tile.id) {
+      @let unlocked = unlockService.isUnlocked(tile.unlockTime);
+      @let remaining = unlockService.getTimeRemaining(tile.unlockTime);
+
+      <div
+        class="tile-card"
+        [class.unlocked]="unlocked"
+        [class.locked]="!unlocked"
+        (click)="openTile(tile)"
+      >
+        <!-- Dynamiczne Tło ze Zdjęciem Jubilata -->
+        <div
+          class="tile-bg-image"
+          [style.backgroundImage]="'url(' + tile.bgImage + ')'"
+        ></div>
+        <div class="tile-overlay"></div>
+
+        <!-- Zawartość Kafelka -->
+        <div class="tile-content">
+          <div class="tile-header">
+            <span class="icon-circle">{{ tile.icon }}</span>
+            <span class="tile-tag font-mono">{{ tile.tagline }}</span>
+          </div>
+
+          <div class="tile-body">
+            <h2 class="tile-title">{{ tile.title }}</h2>
+
+            <!-- Subtitle widoczny TYLKO po odblokowaniu -->
+            @if (unlocked) {
+              <p class="tile-subtitle">{{ tile.subtitle }}</p>
+            }
+          </div>
+
+          <div class="tile-footer">
+            @if (unlocked) {
+              <div class="unlocked-status">
+                <span>✨ Odkryj Niespodziankę!</span>
+                <span class="arrow">➔</span>
+              </div>
+            } @else {
+              <div class="locked-status">
+                <div class="lock-icon-wrap">
+                  <span class="lock-icon">🔒</span>
+                  <span class="unlock-at">Odblokowanie o: {{ tile.unlockTime | date:'HH:mm' }}</span>
+                </div>
+                <div class="timer-box font-mono">
+                  <span>Za: {{ remaining.hours }}:{{ remaining.minutes }}:{{ remaining.seconds }}</span>
+                </div>
+              </div>
+            }
+          </div>
+        </div>
+
+        @if (unlocked) {
+          <div class="shine-effect"></div>
+        }
+      </div>
+    }
+  </main>
+
+  <footer class="footer">
+    <div class="dev-banner" [class.active]="unlockService.devMode()">
+      <span class="status-dot"></span>
+      <span><strong>{{ unlockService.devMode() ? 'Wszystko Odblokowane 🔓' : 'Normalne Odliczanie ⏱️' }}</strong></span>
+      <button class="btn-toggle-dev" (click)="unlockService.toggleDevMode()">
+        {{ unlockService.devMode() ? 'Wyłącz Admin Mode' : 'Odblokuj Wszystko (Dev Mode)' }}
+      </button>
+    </div>
+  </footer>
+</div>
