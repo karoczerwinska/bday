@@ -25,14 +25,14 @@ jobs:
         run: npm install
 
       - name: Build Angular
-        run: npx ng build --base-href /b-day/
+        run: npx ng build --base-href /bday/
 
       - name: Prepare Pages artifact
         run: |
           if [ -d dist/b-day/browser ]; then
             echo "PUBLISH_DIR=dist/b-day/browser" >> $GITHUB_ENV
           elif [ -d dist/b-day ]; then
-            echo "PUBLISH_DIR=dist/b-day" >> $GITHUB_ENV
+            echo "PUBLISH_DIR=dist/bday" >> $GITHUB_ENV
           else
             echo "Angular build output not found"
             exit 1
